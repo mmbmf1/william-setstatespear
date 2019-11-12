@@ -6,7 +6,7 @@ export default function PoemPage(props) {
   const poem = POEMS.find(p =>
     p.id === props.match.params.poemId
   )
-  console.log(props)
+  console.log(props)//where does this come from?
   console.log(POEMS)
   console.log(poem)
   return (
