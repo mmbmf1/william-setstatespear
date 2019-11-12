@@ -2,9 +2,13 @@ import React from 'react'
 import POEMS from './poems'
 
 export default function PoemPage(props) {
+  // console.log(props);
   const poem = POEMS.find(p =>
     p.id === props.match.params.poemId
   )
+  console.log(props)
+  console.log(POEMS)
+  console.log(poem)
   return (
     <article className='Poem'>
       <h2>{poem.title}</h2>
